@@ -1,4 +1,9 @@
 ---
+import { Image } from "astro:assets"; 
+import pilImage1 from "../assets/pil.png";
+import pilImage2 from "../assets/grupp.png";
+
+import Card from "../pages/components/Card.astro";
 ---
 
 <html lang="en">
@@ -14,12 +19,17 @@
 		<h1>Astro test</h1>
 		<p>Välkommen till Astro test.</p>
 
+<Image src={pilImage1} alt="Bilden är en pil" />
 
 		<h2>Här kommer det en paragraf:</h2>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda quasi, facilis corrupti atque iusto officiis maiores nostrum aliquam laudantium dolores tempora, nulla molestiae quas. Nostrum vero dolor quis accusamus?</p>
 	<section>
 		<h2>Detta är en section</h2>
 		<p>Detta är en text</p>
+
+	<Card img={pilImage2} headline="Här kommer en kat"  text="Det är en riktigt söt katt "/>
+	<Card img={pilImage2} headline="En annan katt"  text="Den är ok."/>
+		
 	</section>
 	</body>
 </html>
