@@ -1,5 +1,8 @@
 ---
 import { Image } from "astro:assets"; 
+
+import "../styles/styles.css";
+
 import pilImage1 from "../assets/pil.png";
 import pilImage2 from "../assets/grupp.png";
 
@@ -19,7 +22,7 @@ import Card from "../pages/components/Card.astro";
 		<h1>Astro test</h1>
 		<p>Välkommen till Astro test.</p>
 
-<Image src={pilImage1} alt="Bilden är en pil" />
+<Image  src={pilImage1} alt="Bilden är en pil" />
 
 		<h2>Här kommer det en paragraf:</h2>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo assumenda quasi, facilis corrupti atque iusto officiis maiores nostrum aliquam laudantium dolores tempora, nulla molestiae quas. Nostrum vero dolor quis accusamus?</p>

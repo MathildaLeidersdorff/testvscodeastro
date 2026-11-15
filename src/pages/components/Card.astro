@@ -7,8 +7,14 @@ const {img, headline, text} = Astro.props;
 
 	
 	<article>
-		
 <Image src={img} alt=`Bilden är av ${headline}`/> 
 			<h3>{headline}</h3>
 			<p>{text}</p>
 		</article> 
+
+
+		<style>
+			article{
+				margin: 2rem ;
+			} 
+		</style>
